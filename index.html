@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>moban</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- 我是发送请求页面 -->
+    <script type="text/javascript">
+    // 简单请求的例子
+    // fetch('http://localhost:2000',{
+    //     method: 'GET',  // get post head
+    //     credentials: 'omit', // 默认omit不带cookie，same-origin同源带cookie，include跨域带cookie
+    //     headers:{
+    //         'Content-Type':'application/x-www-form-urlencoded',
+    //     },
+    //     // header不超过以下几种字段
+    //     // Accept
+    //     // Accept-Language
+    //     // Content-Language
+    //     // Last-Event-ID
+    //     // Content-Type，但仅能是下列之一
+    //     // application/x-www-form-urlencoded
+    //     // multipart/form-data
+    //     // text/plain
+    // })
+    // .then(res=>res.json())
+    // .then(res=>{
+    //     console.log(res)
+    // })
+
+
+
+
+
+
+    // // 复杂请求的例子
+    // fetch('http://localhost:2000',{
+    //     method: 'POST',  // get post head
+    //     credentials: 'omit',
+    //     headers:{
+    //         'Content-Type':'application/json',
+    //         // 用于发送token
+    //         'Authorization':'token hahahaha'
+    //     },
+    //     body:JSON.stringify({
+    //         name:1
+    //     })
+    // })
+    // .then(res=>res.json())
+    // .then(res=>{
+    //     console.log(res)
+    // })
+
+
+
+
+
+
+
+
+    // 复杂请求带cookie的例子
+    fetch('http://localhost:2000',{
+        method: 'POST',
+        credentials: 'include',
+        headers:{
+            'Content-Type':'application/json',
+            // 用于发送token
+            'Authorization':'token hahahaha'
+        },
+        body:JSON.stringify({
+            name:1
+        })
+    })
+    .then(res=>res.json())
+    .then(res=>{
+        console.log(res)
+    })
+    </script>
+</body>
+
+</html>

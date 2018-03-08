@@ -1,0 +1,13 @@
+{
+  "name": "",
+  "version": "",
+  "scripts": {
+    "app3000": "node app3000.js",
+    "app2000": "node app2000.js"
+  },
+  "dependencies": {
+    "@koa/cors": "2",
+    "koa": "^2.5.0",
+    "koa-views": "^6.1.4"
+  }
+}
